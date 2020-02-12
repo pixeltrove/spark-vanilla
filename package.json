@@ -1,0 +1,18 @@
+{
+  "name": "spark-vanilla",
+  "version": "1.0.0",
+  "description": "A minimal starting point for developing effective web-based interfaces.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixeltrove/spark-vanilla.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build:css": "npm run compile:css && npm run minify:css",
+    "compile:css": "sass --no-source-map source/spark.scss build/spark.css",
+    "minify:css": "sass --no-source-map --style compressed build/spark.css build/spark.min.css"
+  },
+  "devDependencies": {
+    "sass": "^1.23.0"
+  }
+}

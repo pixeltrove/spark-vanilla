@@ -1,0 +1,27 @@
+// HEADING
+// Title content units.
+// -----------------------------------------------------------------------------
+
+.heading-1 {
+  margin-bottom: $space-large-2;
+  font-size: $font-size-large-1;
+  line-height: $line-height-small-3;
+}
+
+.heading-2 {
+  margin-bottom: $space-regular;
+  font-size: $font-size-large-2;
+  line-height: $line-height-small-2;
+}
+
+.heading-3 {
+  margin-bottom: $space-small-3;
+  font-size: $font-size-large-3;
+  line-height: $line-height-small-1;
+}
+
+.heading-4 {
+  margin-bottom: 0;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+}

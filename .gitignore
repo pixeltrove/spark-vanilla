@@ -1,0 +1,7 @@
+# Folders
+demo
+node_modules
+
+# Files
+*.code-workspace
+.DS_Store

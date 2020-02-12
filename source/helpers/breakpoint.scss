@@ -1,0 +1,20 @@
+// BREAKPOINT
+// Generate necessary content blocks.
+// -----------------------------------------------------------------------------
+
+// Use as argument a breakpoint name established via viewport settings.
+@mixin breakpoint($breakpoint-name) {
+  @if ($breakpoint-name == "default") {
+    // Generate non-responsive content blocks. This feature is employed by other
+    // helpers to simplify the simultaneous creation of non-responsive and
+    // responsive classes.
+    @content;
+  } @else if map-has-key($breakpoints, $breakpoint-name) {
+    // Generate responsive content blocks.
+    @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint name. Check spelling or review viewport settings.";
+  }
+}
