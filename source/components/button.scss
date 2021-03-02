@@ -12,19 +12,19 @@
   line-height: $line-height-regular;
   text-align: center;
   color: $color-neutral-white;
-  background-color: $color-primary-regular;
+  background-color: $color-brand-regular;
 
   &:hover {
-    background-color: $color-primary-dark-a;
+    background-color: $color-brand-dark-a;
   }
 
   &:focus {
     outline: 0;
-    background-color: $color-primary-dark-b;
+    background-color: $color-brand-dark-b;
   }
 
   &:active {
-    background-color: $color-primary-dark-c;
+    background-color: $color-brand-dark-c;
   }
 
   &:disabled {
@@ -36,19 +36,19 @@
 // Plain
 
 .button-plain {
-  color: $color-primary-regular;
+  color: $color-brand-regular;
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-a;
+    background-color: $color-brand-light-a;
   }
 
   &:focus {
-    background-color: $color-primary-light-b;
+    background-color: $color-brand-light-b;
   }
 
   &:active {
-    background-color: $color-primary-light-c;
+    background-color: $color-brand-light-c;
   }
 
   &:disabled {

@@ -17,7 +17,7 @@
   &:focus {
     padding: calc(#{$space-small-b} - #{$border-width-thick}) calc(#{$space-regular} - #{$border-width-thick});
     border-width: $border-width-thick;
-    border-color: $color-primary-regular;
+    border-color: $color-brand-regular;
     outline: 0;
   }
 
