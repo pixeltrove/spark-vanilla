@@ -306,6 +306,7 @@ summary {
   color: #999999;
   background-color: #ebebeb;
 }
+
 .button-plain {
   color: #0044cc;
   background-color: transparent;
@@ -457,6 +458,7 @@ summary {
 .link:hover {
   border-width: 2px;
 }
+
 .link-plain {
   border-color: transparent;
 }
@@ -502,9 +504,11 @@ summary {
 .textfield:disabled {
   border-color: #d6d6d6;
 }
+
 .textfield-select:not([size]):not([multiple]) {
   height: calc(1rem * 1.5 + 2 * 0.625rem);
 }
+
 .textfield-label {
   cursor: pointer;
 }

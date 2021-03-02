@@ -29,26 +29,26 @@
   &:disabled {
     border-color: $color-neutral-light-3;
   }
+}
 
-  // Select
+// Select
 
-  &-select {
-    &:not([size]):not([multiple]) {
-      // Correct height of `select` elements using the font size, line height,
-      // and vertical space values established for textfields.
-      height: calc(#{$font-size-regular} * #{$line-height-regular} + 2 * #{$space-small-2});
-    }
+.textfield-select {
+  &:not([size]):not([multiple]) {
+    // Correct height of `select` elements using the font size, line height,
+    // and vertical space values established for textfields.
+    height: calc(#{$font-size-regular} * #{$line-height-regular} + 2 * #{$space-small-2});
   }
+}
 
-  // Label
-  // Mind that labels are separate support elements, not descendants.
+// Label
+// Mind that labels are separate support elements, not descendants.
 
-  &-label {
-    cursor: pointer;
+.textfield-label {
+  cursor: pointer;
 
-    &.disabled {
-      color: $color-neutral-medium;
-      cursor: default;
-    }
+  &.disabled {
+    color: $color-neutral-medium;
+    cursor: default;
   }
 }
