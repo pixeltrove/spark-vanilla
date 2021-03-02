@@ -6,7 +6,7 @@
 .textfield {
   display: block;
   width: 100%;
-  padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
+  padding: calc(#{$space-small-b} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
   border: $border-width-regular solid $color-neutral-medium;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
@@ -15,14 +15,14 @@
   background-color: $color-neutral-white;
 
   &:focus {
-    padding: calc(#{$space-small-2} - #{$border-width-thick}) calc(#{$space-regular} - #{$border-width-thick});
+    padding: calc(#{$space-small-b} - #{$border-width-thick}) calc(#{$space-regular} - #{$border-width-thick});
     border-width: $border-width-thick;
     border-color: $color-primary-regular;
     outline: 0;
   }
 
   &:disabled {
-    border-color: $color-neutral-light-3;
+    border-color: $color-neutral-light-c;
   }
 }
 
@@ -30,7 +30,7 @@
 
 .textfield-select {
   &:not([size]):not([multiple]) {
-    height: calc(#{$font-size-regular} * #{$line-height-regular} + 2 * #{$space-small-2});
+    height: calc(#{$font-size-regular} * #{$line-height-regular} + 2 * #{$space-small-b});
   }
 }
 

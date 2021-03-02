@@ -5,7 +5,7 @@
 
 .button {
   display: inline-block;
-  padding: $space-small-2 $space-regular;
+  padding: $space-small-b $space-regular;
   border: 0;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
@@ -15,21 +15,21 @@
   background-color: $color-primary-regular;
 
   &:hover {
-    background-color: $color-primary-dark-1;
+    background-color: $color-primary-dark-a;
   }
 
   &:focus {
     outline: 0;
-    background-color: $color-primary-dark-2;
+    background-color: $color-primary-dark-b;
   }
 
   &:active {
-    background-color: $color-primary-dark-3;
+    background-color: $color-primary-dark-c;
   }
 
   &:disabled {
     color: $color-neutral-medium;
-    background-color: $color-neutral-light-1;
+    background-color: $color-neutral-light-a;
   }
 }
 
@@ -40,15 +40,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-1;
+    background-color: $color-primary-light-a;
   }
 
   &:focus {
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-light-b;
   }
 
   &:active {
-    background-color: $color-primary-light-3;
+    background-color: $color-primary-light-c;
   }
 
   &:disabled {

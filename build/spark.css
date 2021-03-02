@@ -229,7 +229,7 @@ select {
 }
 
 [type=search] {
-  outline-offset: -2px;
+  outline-offset: -bpx;
   -webkit-appearance: textfield;
 }
 [type=search]::-webkit-search-decoration {
@@ -426,25 +426,25 @@ summary {
   }
 }
 
-.heading-1 {
+.heading-a {
   margin-bottom: 2rem;
   font-size: 3rem;
   line-height: 1.16666666;
 }
 
-.heading-2 {
+.heading-b {
   margin-bottom: 1rem;
   font-size: 2rem;
   line-height: 1.25;
 }
 
-.heading-3 {
+.heading-c {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: 1.33333333;
 }
 
-.heading-4 {
+.heading-d {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
