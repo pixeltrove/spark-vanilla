@@ -1,5 +1,4 @@
 // TABLE
-// Display data in rows and columns.
 // -----------------------------------------------------------------------------
 
 .table {
@@ -13,8 +12,6 @@
 
   &-header,
   &-data {
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
     padding: $space-small-1 $space-regular calc(#{$space-small-1} - #{$border-width-regular});
     border-bottom: $border-width-regular solid $color-neutral-light-2;
     vertical-align: top;

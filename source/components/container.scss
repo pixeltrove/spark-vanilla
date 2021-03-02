@@ -1,5 +1,4 @@
 // CONTAINER
-// Lay out high-level content units.
 // -----------------------------------------------------------------------------
 
 .container {
@@ -10,7 +9,6 @@
   margin-left: auto;
 
   @include breakpoint(tablet) {
-    // Increase padding to distance content from screen edges.
     padding-right: $space-large-1;
     padding-left: $space-large-1;
   }
