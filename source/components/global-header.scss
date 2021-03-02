@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
 
-  &__brand {
+  &-brand {
     // Match navigation links height.
     padding-top: $space-small-2;
     padding-bottom: $space-small-2;
@@ -16,19 +16,19 @@
     color: $color-primary-regular;
   }
 
-  &__navigation {
+  &-navigation {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
   }
 
-  &__navigation-item {
+  &-navigation-item {
     &:not(:last-child) {
       margin-right: $space-large-2;
     }
   }
 
-  &__navigation-link {
+  &-navigation-link {
     display: inline-block;
     padding-top: $space-small-2;
     padding-bottom: $space-small-2;

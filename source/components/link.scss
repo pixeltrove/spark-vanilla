@@ -13,15 +13,15 @@
   &:hover {
     border-width: $border-width-thick;
   }
+}
 
-  // Plain
+// Plain
 
-  &--plain {
-    border-color: transparent;
+.link-plain {
+  border-color: transparent;
 
-    &:hover {
-      border-width: $border-width-regular;
-      border-color: $color-primary-regular;
-    }
+  &:hover {
+    border-width: $border-width-regular;
+    border-color: $color-primary-regular;
   }
 }

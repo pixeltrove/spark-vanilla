@@ -32,27 +32,27 @@
     color: $color-neutral-medium;
     background-color: $color-neutral-light-1;
   }
+}
 
-  // Plain
+// Plain
 
-  &--plain {
-    color: $color-primary-regular;
+.button-plain {
+  color: $color-primary-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-primary-light-1;
+  }
+
+  &:focus {
+    background-color: $color-primary-light-2;
+  }
+
+  &:active {
+    background-color: $color-primary-light-3;
+  }
+
+  &:disabled {
     background-color: transparent;
-
-    &:hover {
-      background-color: $color-primary-light-1;
-    }
-
-    &:focus {
-      background-color: $color-primary-light-2;
-    }
-
-    &:active {
-      background-color: $color-primary-light-3;
-    }
-
-    &:disabled {
-      background-color: transparent;
-    }
   }
 }
