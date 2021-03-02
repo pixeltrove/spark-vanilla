@@ -1,15 +1,10 @@
 // VIEWPORT
-// Identify relevant viewport features.
 // -----------------------------------------------------------------------------
 
 // Breakpoints
 
-// Set the viewport widths that signal style adjustments. Styles generated with
-// the aid of the default value can target small screens or apply across all
-// viewport sizes. Desktops and laptops usually share the same styles so they
-// can be served using the same breakpoint.
 $breakpoints: (
   default: 0,
   tablet: 720px,
-  laptop: 1080px
+  laptop: 1080px,
 );

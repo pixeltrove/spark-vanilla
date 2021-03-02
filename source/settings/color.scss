@@ -1,29 +1,21 @@
 // COLOR
-// Identify available colors.
 // -----------------------------------------------------------------------------
 
 // Primary
 
-// Establish a standard primary color.
 $color-primary-regular: hsl(220, 100%, 40%);
-// Provide a set of light primary colors.
 $color-primary-light-1: hsl(220, 100%, 96%);
 $color-primary-light-2: hsl(220, 100%, 92%);
 $color-primary-light-3: hsl(220, 100%, 88%);
-// Provide a set of dark primary colors.
 $color-primary-dark-1: hsl(220, 100%, 36%);
 $color-primary-dark-2: hsl(220, 100%, 32%);
 $color-primary-dark-3: hsl(220, 100%, 28%);
 
 // Neutral
 
-// Establish a standard neutral color.
 $color-neutral-regular: hsl(0, 0%, 20%);
-// Establish a white neutral color.
 $color-neutral-white: hsl(0, 0%, 100%);
-// Provide a set of light neutral colors.
 $color-neutral-light-1: hsl(0, 0%, 92%);
 $color-neutral-light-2: hsl(0, 0%, 88%);
 $color-neutral-light-3: hsl(0, 0%, 84%);
-// Provide a medium neutral color.
 $color-neutral-medium: hsl(0, 0%, 60%);

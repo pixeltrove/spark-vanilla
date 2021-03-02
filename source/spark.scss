@@ -1,5 +1,4 @@
 // SETTINGS
-// Manage global configuration options.
 // -----------------------------------------------------------------------------
 
 @import "settings/color";
@@ -10,20 +9,17 @@
 @import "settings/viewport";
 
 // HELPERS
-// Provide ways to carry out recurring tasks.
 // -----------------------------------------------------------------------------
 
 @import "helpers/breakpoint";
 @import "helpers/grid";
 
 // BASICS
-// Establish defaults for fundamental items.
 // -----------------------------------------------------------------------------
 
 @import "basics/reset";
 
 // COMPONENTS
-// Define independent, reusable items.
 // -----------------------------------------------------------------------------
 
 @import "components/button";

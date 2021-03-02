@@ -1,5 +1,4 @@
 // BUTTON
-// Perform clearly defined actions.
 // -----------------------------------------------------------------------------
 
 .button {
@@ -18,8 +17,6 @@
   }
 
   &:focus {
-    // Mind that the outline should be removed only if other styles that imply
-    // focus are set.
     outline: 0;
     background-color: $color-primary-dark-2;
   }

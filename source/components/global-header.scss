@@ -1,5 +1,4 @@
 // GLOBAL HEADER
-// House essential brand information and navigation.
 // -----------------------------------------------------------------------------
 
 .global-header {
@@ -7,7 +6,6 @@
   flex-direction: column;
 
   &-brand {
-    // Match navigation links height.
     padding-top: $space-small-2;
     padding-bottom: $space-small-2;
     font-size: $font-size-large-3;
