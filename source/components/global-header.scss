@@ -1,6 +1,9 @@
 // GLOBAL HEADER
 // -----------------------------------------------------------------------------
 
+@use "../settings" as *;
+@use "../helpers/breakpoint" as *;
+
 .global-header {
   display: flex;
   flex-direction: column;

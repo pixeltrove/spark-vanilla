@@ -1,6 +1,9 @@
 // GRID
 // -----------------------------------------------------------------------------
 
+@use "../settings" as *;
+@use "../helpers/grid" as *;
+
 .grid {
   @include grid($grid-regular);
 }

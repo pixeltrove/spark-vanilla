@@ -1,6 +1,8 @@
 // LINK
 // -----------------------------------------------------------------------------
 
+@use "../settings" as *;
+
 .link {
   padding-bottom: 0.0625em;
   border-bottom: $border-width-regular solid;

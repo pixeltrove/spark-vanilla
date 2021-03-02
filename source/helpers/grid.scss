@@ -1,12 +1,16 @@
 // GRID
 // -----------------------------------------------------------------------------
 
+@use "sass:string";
+@use "../settings" as *;
+@use "../helpers/breakpoint" as *;
+
 @mixin grid($grid) {
   display: grid;
 
   @each $breakpoint-name, $grid-description in $grid {
     @include breakpoint($breakpoint-name) {
-      $grid-name: str-slice(#{&}, 2);
+      $grid-name: string.slice(#{&}, 2);
       $breakpoint-prefix: if($breakpoint-name != "default", #{$breakpoint-name}\:, null);
       $column-count: nth($grid-description, 1);
       $gap-size: nth($grid-description, 2);
