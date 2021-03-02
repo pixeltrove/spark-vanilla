@@ -1,6 +1,9 @@
 // CONTAINER
 // -----------------------------------------------------------------------------
 
+@use "../settings" as *;
+@use "../helpers/breakpoint" as *;
+
 .container {
   max-width: $content-max-width;
   padding-right: $space-large-3;

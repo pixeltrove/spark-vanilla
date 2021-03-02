@@ -1,11 +1,14 @@
 // BREAKPOINT
 // -----------------------------------------------------------------------------
 
+@use "sass:map";
+@use "../settings" as *;
+
 @mixin breakpoint($breakpoint-name) {
   @if ($breakpoint-name == "default") {
     @content;
-  } @else if map-has-key($breakpoints, $breakpoint-name) {
-    @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
+  } @else if map.has-key($breakpoints, $breakpoint-name) {
+    @media screen and (min-width: map.get($breakpoints, $breakpoint-name)) {
       @content;
     }
   } @else {
