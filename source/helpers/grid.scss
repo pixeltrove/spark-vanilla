@@ -2,7 +2,6 @@
 // -----------------------------------------------------------------------------
 
 @use "sass:string";
-@use "../settings" as *;
 @use "../helpers/breakpoint" as *;
 
 @mixin grid($grid) {
