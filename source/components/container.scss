@@ -5,14 +5,14 @@
 @use "../helpers/breakpoint" as *;
 
 .container {
-  max-width: $content-max-width;
-  padding-right: $space-large-3;
-  padding-left: $space-large-3;
+  max-width: $container-max-width;
+  padding-right: $space-large-c;
+  padding-left: $space-large-c;
   margin-right: auto;
   margin-left: auto;
 
   @include breakpoint(tablet) {
-    padding-right: $space-large-1;
-    padding-left: $space-large-1;
+    padding-right: $space-large-a;
+    padding-left: $space-large-a;
   }
 }

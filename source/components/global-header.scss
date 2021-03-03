@@ -9,12 +9,12 @@
   flex-direction: column;
 
   &-brand {
-    padding-top: $space-small-2;
-    padding-bottom: $space-small-2;
-    font-size: $font-size-large-3;
+    padding-top: $space-small-b;
+    padding-bottom: $space-small-b;
+    font-size: $font-size-large-c;
     line-height: 1;
     font-weight: $font-weight-bold;
-    color: $color-primary-regular;
+    color: $color-brand-regular;
   }
 
   &-navigation {
@@ -25,18 +25,18 @@
 
   &-navigation-item {
     &:not(:last-child) {
-      margin-right: $space-large-2;
+      margin-right: $space-large-b;
     }
   }
 
   &-navigation-link {
     display: inline-block;
-    padding-top: $space-small-2;
-    padding-bottom: $space-small-2;
+    padding-top: $space-small-b;
+    padding-bottom: $space-small-b;
     color: $color-neutral-regular;
 
     &:hover {
-      color: $color-primary-regular;
+      color: $color-brand-regular;
     }
   }
 

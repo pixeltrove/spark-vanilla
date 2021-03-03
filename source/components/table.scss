@@ -7,15 +7,15 @@
   width: 100%;
 
   &-caption {
-    padding: $space-small-1 $space-regular;
+    padding: $space-small-a $space-regular;
     font-weight: $font-weight-bold;
     text-align: left;
   }
 
   &-header,
   &-data {
-    padding: $space-small-1 $space-regular calc(#{$space-small-1} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-neutral-light-2;
+    padding: $space-small-a $space-regular calc(#{$space-small-a} - #{$border-width-regular});
+    border-bottom: $border-width-regular solid $color-neutral-light-b;
     vertical-align: top;
   }
 

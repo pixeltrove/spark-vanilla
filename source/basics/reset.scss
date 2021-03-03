@@ -124,7 +124,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: $color-neutral-light-2;
+  background-color: $color-neutral-light-b;
 }
 
 // Paragraph
@@ -275,7 +275,7 @@ select {
 }
 
 [type="search"] {
-  outline-offset: -2px;
+  outline-offset: -bpx;
   -webkit-appearance: textfield;
 
   &::-webkit-search-decoration {

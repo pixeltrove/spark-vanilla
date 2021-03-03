@@ -1,23 +1,26 @@
 // LAYOUT
 // -----------------------------------------------------------------------------
 
-// Content
+// Container
 
-$content-max-width: 1240px;
+$container-max-width: 1240px;
 
 // Grid
+
+$gap-regular: 1.25rem;
+$gap-large: 2.5rem;
 
 $grid-regular: (
   default: (
     2,
-    1.5rem,
+    $gap-regular,
   ),
   tablet: (
-    3,
-    1.5rem,
+    6,
+    $gap-regular,
   ),
   laptop: (
-    4,
-    2.5rem,
+    12,
+    $gap-large,
   ),
 );
