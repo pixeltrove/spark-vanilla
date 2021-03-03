@@ -13,8 +13,14 @@
 
 // Root
 
-html {
+:root {
   font-size: $root-font-size;
+}
+
+// Focus
+
+:focus:not(:focus-visible) {
+  outline: 0;
 }
 
 // Body
@@ -27,12 +33,57 @@ body {
   line-height: $line-height-regular;
   font-weight: $font-weight-regular;
   color: $color-neutral-regular;
+  background-color: $color-white-regular;
+  -webkit-tap-highlight-color: transparent;
 }
 
 // Address
 
 address {
   font-style: normal;
+}
+
+// Blockquote
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+// Definition, ordered, and unordered list
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+
+  &[class] {
+    list-style: none;
+  }
+
+  & ol,
+  & ul {
+    margin-bottom: 0;
+  }
+}
+
+dt {
+  font-weight: $font-weight-bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+// Figure
+
+figure {
+  margin: 0 0 1rem;
 }
 
 // Heading
@@ -72,50 +123,6 @@ h6 {
   font-size: 0.75rem;
 }
 
-// Blockquote
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-// Definition, ordered, and unordered list
-
-dl,
-ol,
-ul {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ol,
-ul {
-  padding-left: 2rem;
-
-  &[class] {
-    padding-left: 0;
-    list-style: none;
-  }
-
-  & ol,
-  & ul {
-    margin-bottom: 0;
-  }
-}
-
-dt {
-  font-weight: $font-weight-bold;
-}
-
-dd {
-  margin-left: 0;
-}
-
-// Figure
-
-figure {
-  margin: 0 0 1rem;
-}
-
 // Thematic break
 
 hr {
@@ -124,7 +131,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: $color-neutral-light-b;
+  background-color: $color-neutral-light-c;
 }
 
 // Paragraph
@@ -147,66 +154,10 @@ pre {
   }
 }
 
-// Anchor
+// Table
 
-a {
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-// Abbreviation
-
-abbr[title] {
-  cursor: help;
-}
-
-// Bold and strong
-
-b,
-strong {
-  font-weight: $font-weight-bold;
-}
-
-// Code, user input, and sample output
-
-code,
-kbd,
-samp {
-  font-family: $font-family-monospace;
-}
-
-code,
-kbd {
-  font-size: 0.875em;
-}
-
-kbd {
-  kbd {
-    font-size: inherit;
-  }
-}
-
-// Small
-
-small {
-  font-size: 0.875em;
-}
-
-// Subscript and superscript
-
-sub,
-sup {
-  position: relative;
-  font-size: 0.75em;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
+table {
+  border-collapse: collapse;
 }
 
 // Audio, canvas, iframe, image, and video
@@ -225,18 +176,6 @@ video {
   height: auto;
 }
 
-// Scalable vector graphics
-
-svg {
-  vertical-align: middle;
-}
-
-// Table
-
-table {
-  border-collapse: collapse;
-}
-
 // Button, input, select, and textarea
 
 button,
@@ -245,7 +184,6 @@ select,
 textarea {
   margin: 0;
   font: inherit;
-  -webkit-tap-highlight-color: transparent;
 
   &:disabled {
     cursor: default;
@@ -264,18 +202,13 @@ button,
   }
 }
 
-button,
-select {
-  text-transform: none;
-}
-
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
 [type="search"] {
-  outline-offset: -bpx;
+  outline-offset: -2px;
   -webkit-appearance: textfield;
 
   &::-webkit-search-decoration {
@@ -323,6 +256,67 @@ meter {
 
 progress {
   width: 10rem;
+}
+
+// Anchor
+
+a {
+  text-decoration: none;
+}
+
+// Abbreviation
+
+abbr[title] {
+  cursor: help;
+}
+
+// Bold and strong
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Code, user input, and sample output
+
+code,
+kbd,
+samp {
+  font-family: $font-family-monospace;
+}
+
+code,
+kbd {
+  font-size: 0.875em;
+}
+
+kbd {
+  kbd {
+    font-size: inherit;
+  }
+}
+
+// Small
+
+small {
+  font-size: 0.875em;
+}
+
+// Subscript and superscript
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 0.75em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
 }
 
 // Dialog

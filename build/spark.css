@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   font-size: 100%;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
 }
 
 body {
@@ -16,10 +20,49 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: #3d3d3d;
+  background-color: white;
+  -webkit-tap-highlight-color: transparent;
 }
 
 address {
   font-style: normal;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+ol[class],
+ul[class] {
+  list-style: none;
+}
+ol ol, ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0;
+}
+
+figure {
+  margin: 0 0 1rem;
 }
 
 h1,
@@ -57,51 +100,13 @@ h6 {
   font-size: 0.75rem;
 }
 
-blockquote {
-  margin: 0 0 1rem;
-}
-
-dl,
-ol,
-ul {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-ol,
-ul {
-  padding-left: 2rem;
-}
-ol[class],
-ul[class] {
-  padding-left: 0;
-  list-style: none;
-}
-ol ol, ol ul,
-ul ol,
-ul ul {
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin-left: 0;
-}
-
-figure {
-  margin: 0 0 1rem;
-}
-
 hr {
   overflow: visible;
   height: 0.125rem;
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #ebebeb;
+  background-color: #e0e0e0;
 }
 
 p {
@@ -119,52 +124,8 @@ pre code {
   font-size: inherit;
 }
 
-a {
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-abbr[title] {
-  cursor: help;
-}
-
-b,
-strong {
-  font-weight: 700;
-}
-
-code,
-kbd,
-samp {
-  font-family: SFMono-Regular, Menlo, Consolas, monospace;
-}
-
-code,
-kbd {
-  font-size: 0.875em;
-}
-
-kbd kbd {
-  font-size: inherit;
-}
-
-small {
-  font-size: 0.875em;
-}
-
-sub,
-sup {
-  position: relative;
-  font-size: 0.75em;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
+table {
+  border-collapse: collapse;
 }
 
 audio,
@@ -181,21 +142,12 @@ video {
   height: auto;
 }
 
-svg {
-  vertical-align: middle;
-}
-
-table {
-  border-collapse: collapse;
-}
-
 button,
 input,
 select,
 textarea {
   margin: 0;
   font: inherit;
-  -webkit-tap-highlight-color: transparent;
 }
 button:disabled,
 input:disabled,
@@ -218,18 +170,13 @@ button::-moz-focus-inner,
   border: 0;
 }
 
-button,
-select {
-  text-transform: none;
-}
-
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
 [type=search] {
-  outline-offset: -bpx;
+  outline-offset: -2px;
   -webkit-appearance: textfield;
 }
 [type=search]::-webkit-search-decoration {
@@ -270,6 +217,53 @@ meter {
 
 progress {
   width: 10rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+abbr[title] {
+  cursor: help;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+code,
+kbd {
+  font-size: 0.875em;
+}
+
+kbd kbd {
+  font-size: inherit;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 0.75em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
 }
 
 dialog {
