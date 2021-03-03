@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
-  color: #333333;
+  color: #3d3d3d;
 }
 
 address {
@@ -101,7 +101,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #e0e0e0;
+  background-color: #ebebeb;
 }
 
 p {
@@ -290,35 +290,35 @@ summary {
   line-height: 1.5;
   text-align: center;
   color: white;
-  background-color: #0044cc;
+  background-color: #1060bc;
 }
 .button:hover {
-  background-color: #003db8;
+  background-color: #0f57a9;
 }
 .button:focus {
   outline: 0;
-  background-color: #0036a3;
+  background-color: #0d4d96;
 }
 .button:active {
-  background-color: #00308f;
+  background-color: #0b4383;
 }
 .button:disabled {
-  color: #999999;
-  background-color: #ebebeb;
+  color: #949494;
+  background-color: whitesmoke;
 }
 
 .button-plain {
-  color: #0044cc;
+  color: #1060bc;
   background-color: transparent;
 }
 .button-plain:hover {
-  background-color: #ebf1ff;
+  background-color: #ecf4fd;
 }
 .button-plain:focus {
-  background-color: #d6e4ff;
+  background-color: #d9e9fc;
 }
 .button-plain:active {
-  background-color: #c2d6ff;
+  background-color: #c7dffa;
 }
 .button-plain:disabled {
   background-color: transparent;
@@ -348,7 +348,7 @@ summary {
   font-size: 1.5rem;
   line-height: 1;
   font-weight: 700;
-  color: #0044cc;
+  color: #1060bc;
 }
 .global-header-navigation {
   display: flex;
@@ -362,10 +362,10 @@ summary {
   display: inline-block;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  color: #333333;
+  color: #3d3d3d;
 }
 .global-header-navigation-link:hover {
-  color: #0044cc;
+  color: #1060bc;
 }
 @media screen and (min-width: 720px) {
   .global-header {
@@ -453,7 +453,7 @@ summary {
 .link {
   padding-bottom: 0.0625em;
   border-bottom: 1px solid;
-  color: #0044cc;
+  color: #1060bc;
 }
 .link:hover {
   border-width: 2px;
@@ -464,7 +464,7 @@ summary {
 }
 .link-plain:hover {
   border-width: 1px;
-  border-color: #0044cc;
+  border-color: #1060bc;
 }
 
 .table {
@@ -477,7 +477,7 @@ summary {
 }
 .table-header, .table-data {
   padding: 0.75rem 1rem calc(0.75rem - 1px);
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ebebeb;
   vertical-align: top;
 }
 .table-header {
@@ -488,21 +488,21 @@ summary {
   display: block;
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
-  border: 1px solid #999999;
+  border: 1px solid #949494;
   border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #333333;
+  color: #3d3d3d;
   background-color: white;
 }
 .textfield:focus {
   padding: calc(0.625rem - 2px) calc(1rem - 2px);
   border-width: 2px;
-  border-color: #0044cc;
+  border-color: #1060bc;
   outline: 0;
 }
 .textfield:disabled {
-  border-color: #d6d6d6;
+  border-color: #e0e0e0;
 }
 
 .textfield-select:not([size]):not([multiple]) {
@@ -513,6 +513,6 @@ summary {
   cursor: pointer;
 }
 .textfield-label.disabled {
-  color: #999999;
+  color: #949494;
   cursor: default;
 }
