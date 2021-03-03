@@ -326,15 +326,15 @@ summary {
 
 .container {
   max-width: 1240px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 720px) {
   .container {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
@@ -356,7 +356,7 @@ summary {
   margin-bottom: 0;
 }
 .global-header-navigation-item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 2.5rem;
 }
 .global-header-navigation-link {
   display: inline-block;
@@ -471,7 +471,7 @@ summary {
 }
 
 .heading-a {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 3rem;
   line-height: 1.16666666;
 }
