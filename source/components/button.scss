@@ -4,32 +4,31 @@
 @use "../settings" as *;
 
 .button {
-  display: inline-block;
-  padding: $space-small-b $space-regular;
-  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(#{$space-small-b} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
+  border: $border-width-regular solid transparent;
   border-radius: $border-radius-regular;
+  text-align: center;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  text-align: center;
   color: $color-white-regular;
   background-color: $color-brand-regular;
+  user-select: none;
 
   &:hover {
     background-color: $color-brand-dark-a;
   }
 
-  &:focus {
-    outline: 0;
-    background-color: $color-brand-dark-b;
-  }
-
   &:active {
-    background-color: $color-brand-dark-c;
+    background-color: $color-brand-dark-b;
   }
 
   &:disabled {
     color: $color-neutral-medium;
-    background-color: $color-neutral-light-a;
+    background-color: $color-neutral-light-b;
+    pointer-events: none;
   }
 }
 
@@ -43,12 +42,8 @@
     background-color: $color-brand-light-a;
   }
 
-  &:focus {
-    background-color: $color-brand-light-b;
-  }
-
   &:active {
-    background-color: $color-brand-light-c;
+    background-color: $color-brand-light-b;
   }
 
   &:disabled {
