@@ -377,7 +377,7 @@ summary {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 1.25rem;
 }
 .grid-column-1 {
   grid-column: span 1;
@@ -389,8 +389,8 @@ summary {
 
 @media screen and (min-width: 720px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.25rem;
   }
   .tablet\:grid-column-1 {
     grid-column: span 1;
@@ -403,10 +403,22 @@ summary {
   .tablet\:grid-column-3 {
     grid-column: span 3;
   }
+
+  .tablet\:grid-column-4 {
+    grid-column: span 4;
+  }
+
+  .tablet\:grid-column-5 {
+    grid-column: span 5;
+  }
+
+  .tablet\:grid-column-6 {
+    grid-column: span 6;
+  }
 }
 @media screen and (min-width: 1080px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 2.5rem;
   }
   .laptop\:grid-column-1 {
@@ -423,6 +435,38 @@ summary {
 
   .laptop\:grid-column-4 {
     grid-column: span 4;
+  }
+
+  .laptop\:grid-column-5 {
+    grid-column: span 5;
+  }
+
+  .laptop\:grid-column-6 {
+    grid-column: span 6;
+  }
+
+  .laptop\:grid-column-7 {
+    grid-column: span 7;
+  }
+
+  .laptop\:grid-column-8 {
+    grid-column: span 8;
+  }
+
+  .laptop\:grid-column-9 {
+    grid-column: span 9;
+  }
+
+  .laptop\:grid-column-10 {
+    grid-column: span 10;
+  }
+
+  .laptop\:grid-column-11 {
+    grid-column: span 11;
+  }
+
+  .laptop\:grid-column-12 {
+    grid-column: span 12;
   }
 }
 
