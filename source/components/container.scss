@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 
 @use "../settings" as *;
-@use "../helpers/breakpoint" as *;
+@use "../helpers/set-breakpoint" as *;
 
 .container {
   max-width: $container-max-width;
@@ -11,7 +11,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include breakpoint(tablet) {
+  @include set-breakpoint(tablet) {
     padding-right: $space-large-a;
     padding-left: $space-large-a;
   }

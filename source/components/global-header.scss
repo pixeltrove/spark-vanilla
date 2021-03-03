@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 
 @use "../settings" as *;
-@use "../helpers/breakpoint" as *;
+@use "../helpers/set-breakpoint" as *;
 
 .global-header {
   display: flex;
@@ -40,7 +40,7 @@
     }
   }
 
-  @include breakpoint(tablet) {
+  @include set-breakpoint(tablet) {
     flex-direction: row;
     justify-content: space-between;
   }
