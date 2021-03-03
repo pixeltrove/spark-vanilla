@@ -1,9 +1,28 @@
 // GRID
 // -----------------------------------------------------------------------------
 
+@use "sass:string";
 @use "../settings" as *;
-@use "../helpers/grid" as *;
+@use "../helpers/set-breakpoint" as *;
 
 .grid {
-  @include grid($grid-regular);
+  display: grid;
+
+  @each $breakpoint-name, $grid-description in $grid-regular {
+    @include set-breakpoint($breakpoint-name) {
+      $grid-name: string.slice(#{&}, 2);
+      $breakpoint-prefix: if($breakpoint-name != "default", #{$breakpoint-name}\:, null);
+      $column-count: nth($grid-description, 1);
+      $gap-size: nth($grid-description, 2);
+
+      grid-template-columns: repeat($column-count, 1fr);
+      grid-gap: $gap-size;
+
+      @for $i from 1 through $column-count {
+        @at-root .#{$breakpoint-prefix}#{$grid-name}-column-#{$i} {
+          grid-column: span #{$i};
+        }
+      }
+    }
+  }
 }
