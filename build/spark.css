@@ -276,29 +276,29 @@ summary {
 }
 
 .button {
-  display: inline-block;
-  padding: 0.625rem 1rem;
-  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(0.625rem - 1px) calc(1rem - 1px);
+  border: 1px solid transparent;
   border-radius: 4px;
+  text-align: center;
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
   color: white;
   background-color: #1060bc;
+  user-select: none;
 }
 .button:hover {
   background-color: #0f57a9;
 }
-.button:focus {
-  outline: 0;
-  background-color: #0d4d96;
-}
 .button:active {
-  background-color: #0b4383;
+  background-color: #0d4d96;
 }
 .button:disabled {
   color: #949494;
-  background-color: whitesmoke;
+  background-color: #ebebeb;
+  pointer-events: none;
 }
 
 .button-plain {
@@ -308,11 +308,8 @@ summary {
 .button-plain:hover {
   background-color: #ecf4fd;
 }
-.button-plain:focus {
-  background-color: #d9e9fc;
-}
 .button-plain:active {
-  background-color: #c7dffa;
+  background-color: #d9e9fc;
 }
 .button-plain:disabled {
   background-color: transparent;
