@@ -7,32 +7,15 @@
 .global-header {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
   &-brand {
-    padding-top: $space-small-b;
-    padding-bottom: $space-small-b;
+    padding-top: $space-small-d;
+    padding-bottom: $space-small-d;
+    margin-right: $space-large-c;
     font-size: $font-size-large-c;
-    line-height: 1;
+    line-height: $line-height-small-a;
     font-weight: $font-weight-bold;
-    color: $color-brand-regular;
-  }
-
-  &-navigation {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-
-  &-navigation-item {
-    &:not(:last-child) {
-      margin-right: $space-large-b;
-    }
-  }
-
-  &-navigation-link {
-    display: inline-block;
-    padding-top: $space-small-b;
-    padding-bottom: $space-small-b;
     color: $color-neutral-regular;
 
     &:hover {
@@ -40,8 +23,33 @@
     }
   }
 
+  &-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: $space-large-c;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      padding-top: $space-small-b;
+      padding-bottom: $space-small-b;
+      color: $color-neutral-regular;
+
+      &:hover {
+        color: $color-brand-regular;
+      }
+    }
+  }
+
   @include set-breakpoint(tablet) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
   }
 }
