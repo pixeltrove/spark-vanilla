@@ -13,14 +13,3 @@
     text-decoration-color: $color-brand-regular;
   }
 }
-
-// Plain
-
-.link-plain {
-  border-color: transparent;
-
-  &:hover {
-    border-width: $border-width-regular;
-    border-color: $color-brand-regular;
-  }
-}

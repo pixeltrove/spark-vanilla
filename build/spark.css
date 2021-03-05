@@ -545,14 +545,6 @@ summary {
   text-decoration-color: #1060bc;
 }
 
-.link-plain {
-  border-color: transparent;
-}
-.link-plain:hover {
-  border-width: 1px;
-  border-color: #1060bc;
-}
-
 .table {
   width: 100%;
 }
