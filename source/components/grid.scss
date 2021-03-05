@@ -1,6 +1,7 @@
 // GRID
 // -----------------------------------------------------------------------------
 
+@use "sass:map";
 @use "sass:string";
 @use "../settings" as *;
 @use "../helpers/set-breakpoint" as *;
@@ -12,11 +13,11 @@
     @include set-breakpoint($breakpoint-name) {
       $grid-name: string.slice(#{&}, 2);
       $breakpoint-prefix: if($breakpoint-name != "default", #{$breakpoint-name}\:, null);
-      $column-count: nth($grid-description, 1);
-      $gap-size: nth($grid-description, 2);
+      $column-count: map.get($grid-description, "column-count");
+      $gap: map.get($grid-description, "gap");
 
       grid-template-columns: repeat($column-count, 1fr);
-      grid-gap: $gap-size;
+      gap: $gap;
 
       @for $i from 1 through $column-count {
         @at-root .#{$breakpoint-prefix}#{$grid-name}-column-#{$i} {

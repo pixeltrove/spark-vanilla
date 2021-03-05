@@ -12,15 +12,14 @@ $gap-large: 2.5rem;
 
 $grid-regular: (
   default: (
-    2,
-    $gap-regular,
+    column-count: 2,
+    gap: $gap-regular,
   ),
   tablet: (
-    6,
-    $gap-regular,
+    column-count: 6,
   ),
   laptop: (
-    12,
-    $gap-large,
+    column-count: 12,
+    gap: $gap-large,
   ),
 );
