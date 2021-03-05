@@ -536,12 +536,13 @@ summary {
 }
 
 .link {
-  padding-bottom: 0.0625em;
-  border-bottom: 1px solid;
   color: #1060bc;
+  text-decoration: underline;
+  text-decoration-color: #3e8eea;
+  text-underline-offset: 0.25rem;
 }
 .link:hover {
-  border-width: 2px;
+  text-decoration-color: #1060bc;
 }
 
 .link-plain {

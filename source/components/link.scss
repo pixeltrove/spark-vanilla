@@ -4,12 +4,13 @@
 @use "../settings" as *;
 
 .link {
-  padding-bottom: 0.0625em;
-  border-bottom: $border-width-regular solid;
   color: $color-brand-regular;
+  text-decoration: underline;
+  text-decoration-color: $color-brand-medium;
+  text-underline-offset: 0.25rem;
 
   &:hover {
-    border-width: $border-width-thick;
+    text-decoration-color: $color-brand-regular;
   }
 }
 
