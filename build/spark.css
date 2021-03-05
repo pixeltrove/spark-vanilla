@@ -407,7 +407,7 @@ summary {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.25rem;
+  gap: 1.25rem;
 }
 .grid-column-1 {
   grid-column: span 1;
@@ -420,7 +420,6 @@ summary {
 @media screen and (min-width: 720px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1.25rem;
   }
   .tablet\:grid-column-1 {
     grid-column: span 1;
@@ -449,7 +448,7 @@ summary {
 @media screen and (min-width: 1080px) {
   .grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 2.5rem;
+    gap: 2.5rem;
   }
   .laptop\:grid-column-1 {
     grid-column: span 1;
