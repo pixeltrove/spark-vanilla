@@ -545,6 +545,38 @@ summary {
   text-decoration-color: #1060bc;
 }
 
+.radio {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #949494;
+  border-radius: 8000px;
+  vertical-align: middle;
+  background-color: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.radio:checked {
+  border-color: #1060bc;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><circle cx='8' cy='8' r='5' fill='%23fff'/></svg>");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1060bc;
+}
+.radio:disabled {
+  border-color: #e0e0e0;
+}
+
+.radio-label {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio-label.is-disabled {
+  color: #949494;
+  cursor: default;
+}
+
 .table {
   width: 100%;
 }
