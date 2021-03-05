@@ -8,20 +8,19 @@
 .grid {
   display: grid;
 
-  @each $breakpoint-name, $grid-description in $grid-regular {
-    @include set-breakpoint($breakpoint-name) {
-      $breakpoint-prefix: if($breakpoint-name != "default", #{$breakpoint-name}\:, null);
-      $column-count: map.get($grid-description, "column-count");
-      $gap: map.get($grid-description, "gap");
+  @each $breakpoint, $description in $grid-regular {
+    $prefix: if($breakpoint != "default", #{$breakpoint}\:, null);
+    $column-count: map.get($description, "column-count");
+    $gap: map.get($description, "gap");
 
+    @include set-breakpoint($breakpoint) {
       grid-template-columns: repeat($column-count, 1fr);
-      gap: $gap;
-
       @for $i from 1 through $column-count {
-        @at-root .#{$breakpoint-prefix}grid-column-#{$i} {
+        @at-root .#{$prefix}grid-column-#{$i} {
           grid-column: span #{$i};
         }
       }
+      gap: $gap;
     }
   }
 }
