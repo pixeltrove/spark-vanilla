@@ -8,18 +8,30 @@
 
   &-caption {
     padding: $space-small-a $space-regular;
-    font-weight: $font-weight-bold;
     text-align: left;
+    font-weight: $font-weight-bold;
   }
 
   &-header,
   &-data {
     padding: $space-small-a $space-regular calc(#{$space-small-a} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-neutral-light-b;
+    border-bottom: $border-width-regular solid $color-neutral-light-c;
     vertical-align: top;
   }
 
   &-header {
     text-align: left;
+
+    thead & {
+      border-color: $color-neutral-medium;
+    }
+
+    tbody & {
+      border-right: $border-width-regular solid $color-neutral-medium;
+    }
   }
+}
+
+.table-wrapper {
+  overflow-x: auto;
 }
