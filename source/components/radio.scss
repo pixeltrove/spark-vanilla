@@ -22,15 +22,15 @@
   }
 
   &:disabled {
-    border-color: $color-neutral-light-c;
+    border-color: $color-neutral-light-b;
   }
 }
 
 // Label
 
 .radio-label {
-  padding-right: $space-small-e;
-  padding-left: $space-small-e;
+  padding-right: $space-small-c;
+  padding-left: $space-small-c;
   vertical-align: middle;
   cursor: pointer;
 
