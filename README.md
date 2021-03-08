@@ -8,4 +8,4 @@ Build effective interfaces starting with a solid foundation. Spark Vanilla provi
 
 ## Copyright
 
-Copyright (c) 2020 [Mihnea-Luchian Cosma](https://github.com/luchian). Released under the [MIT License](https://github.com/pixeltrove/spark-vanilla/blob/master/LICENSE.md).
+Copyright (c) 2021 [Mihnea-Luchian Cosma](https://github.com/luchian). Released under the [MIT License](https://github.com/pixeltrove/spark-vanilla/blob/master/LICENSE.md).
