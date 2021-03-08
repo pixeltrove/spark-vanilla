@@ -1,6 +1,6 @@
 # Spark Vanilla
 
-Build effective interfaces starting with a solid foundation. Spark Vanilla provides a coherent architecture, consistent naming conventions, and a collection of basic building blocks, that establish a sturdy starting point for developing web-based interfaces of any size or complexity.
+Build effective interfaces starting with a solid foundation. Spark Vanilla provides a simple architecture, consistent naming conventions, and a handful of basic Sass components that establish a sturdy starting point for developing web-based interfaces of any size or complexity.
 
 ## Installation
 
