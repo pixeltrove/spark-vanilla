@@ -1,27 +1,37 @@
 // TABLE
-// Display data in rows and columns.
 // -----------------------------------------------------------------------------
+
+@use "../settings" as *;
 
 .table {
   width: 100%;
 
-  &__caption {
-    padding: $space-small-1 $space-regular;
-    font-weight: $font-weight-bold;
+  &-caption {
+    padding: $space-small-a $space-regular;
     text-align: left;
+    font-weight: $font-weight-bold;
   }
 
-  &__header,
-  &__data {
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
-    padding: $space-small-1 $space-regular
-      calc(#{$space-small-1} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-neutral-light-2;
+  &-header,
+  &-data {
+    padding: $space-small-a $space-regular calc(#{$space-small-a} - #{$border-width-regular});
+    border-bottom: $border-width-regular solid $color-neutral-light-b;
     vertical-align: top;
   }
 
-  &__header {
+  &-header {
     text-align: left;
+
+    thead & {
+      border-color: $color-neutral-medium;
+    }
+
+    tbody & {
+      border-right: $border-width-regular solid $color-neutral-medium;
+    }
   }
+}
+
+.table-wrapper {
+  overflow-x: auto;
 }

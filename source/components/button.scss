@@ -1,58 +1,52 @@
 // BUTTON
-// Perform clearly defined actions.
 // -----------------------------------------------------------------------------
 
+@use "../settings" as *;
+
 .button {
-  display: inline-block;
-  padding: $space-small-2 $space-regular;
-  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(#{$space-small-b} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
+  border: $border-width-regular solid transparent;
   border-radius: $border-radius-regular;
+  text-align: center;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  text-align: center;
-  color: $color-neutral-white;
-  background-color: $color-primary-regular;
+  color: $color-white-regular;
+  background-color: $color-brand-regular;
+  user-select: none;
 
   &:hover {
-    background-color: $color-primary-dark-1;
-  }
-
-  &:focus {
-    // Mind that the outline should be removed only if other styles that imply
-    // focus are set.
-    outline: 0;
-    background-color: $color-primary-dark-2;
+    background-color: $color-brand-dark-a;
   }
 
   &:active {
-    background-color: $color-primary-dark-3;
+    background-color: $color-brand-dark-b;
   }
 
   &:disabled {
     color: $color-neutral-medium;
-    background-color: $color-neutral-light-1;
+    background-color: $color-neutral-light-a;
+    pointer-events: none;
+  }
+}
+
+// Plain
+
+.button-plain {
+  color: $color-brand-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-brand-light-a;
   }
 
-  // Plain
+  &:active {
+    background-color: $color-brand-light-b;
+  }
 
-  &--plain {
-    color: $color-primary-regular;
+  &:disabled {
     background-color: transparent;
-
-    &:hover {
-      background-color: $color-primary-light-1;
-    }
-
-    &:focus {
-      background-color: $color-primary-light-2;
-    }
-
-    &:active {
-      background-color: $color-primary-light-3;
-    }
-
-    &:disabled {
-      background-color: transparent;
-    }
   }
 }
