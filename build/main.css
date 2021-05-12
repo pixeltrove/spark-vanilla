@@ -15,7 +15,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -77,27 +77,33 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 1.16666666;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.25;
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  line-height: 1.33333333;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.3125rem;
+  line-height: 1.33333333;
 }
 
 h5 {
-  font-size: 0.875rem;
+  font-size: 1.125rem;
+  line-height: 1.33333333;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 hr {
@@ -118,7 +124,7 @@ pre {
   overflow: auto;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 pre code {
   font-size: inherit;
@@ -139,7 +145,6 @@ video {
 img,
 video {
   max-width: 100%;
-  height: auto;
 }
 
 button,
@@ -171,13 +176,14 @@ button::-moz-focus-inner,
 }
 
 ::-webkit-file-upload-button {
-  font: inherit;
   -webkit-appearance: button;
 }
 
 [type=search] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
+}
+[type=search]:focus {
+  outline-offset: -2px;
 }
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -235,7 +241,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 code,
@@ -283,6 +289,7 @@ summary {
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
+  vertical-align: middle;
   font-size: 1rem;
   line-height: 1.5;
   color: white;
@@ -327,8 +334,9 @@ summary {
 }
 .checkbox:checked {
   border-color: #1060bc;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path d='M2.91421 6.58579L1.5 8L6.44975 12.9497L14.935 4.46447L13.5208 3.05025L6.44975 10.1213L2.91421 6.58579Z' fill='%23fff'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M2.91421 6.58579L1.5 8L6.44975 12.9497L14.935 4.46447L13.5208 3.05025L6.44975 10.1213L2.91421 6.58579Z' fill='%23fff'/></svg>");
   background-position: center;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-color: #1060bc;
 }
@@ -456,42 +464,6 @@ summary {
   }
 }
 
-.heading-1 {
-  margin-bottom: 0;
-  font-size: 3rem;
-  line-height: 1.16666666;
-}
-
-.heading-2 {
-  margin-bottom: 0;
-  font-size: 2rem;
-  line-height: 1.25;
-}
-
-.heading-3 {
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  line-height: 1.33333333;
-}
-
-.heading-4 {
-  margin-bottom: 0;
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
-}
-
-.heading-5 {
-  margin-bottom: 0;
-  font-size: 1.125rem;
-  line-height: 1.33333333;
-}
-
-.heading-6 {
-  margin-bottom: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .link {
   color: #1060bc;
   text-decoration: underline;
@@ -514,8 +486,9 @@ summary {
 }
 .radio:checked {
   border-color: #1060bc;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><circle cx='8' cy='8' r='5' fill='%23fff'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='5' fill='%23fff'/></svg>");
   background-position: center;
+  background-size: 1rem;
   background-repeat: no-repeat;
   background-color: #1060bc;
 }

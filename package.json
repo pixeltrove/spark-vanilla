@@ -1,18 +1,16 @@
 {
-  "name": "spark-vanilla",
-  "version": "2.0.1",
+  "name": "sparkle-vanilla",
+  "version": "3.0.0",
   "description": "A minimal starting point for developing effective web-based interfaces.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixeltrove/spark-vanilla.git"
+    "url": "https://github.com/pixeltrove/sparkle-vanilla.git"
   },
   "license": "MIT",
   "scripts": {
-    "build:css": "npm run compile:css && npm run minify:css",
-    "compile:css": "sass --no-source-map source/main.scss build/main.css",
-    "minify:css": "sass --no-source-map --style=compressed build/main.css build/main.min.css"
+    "compile:css": "sass --no-source-map source/main.scss build/main.css"
   },
   "devDependencies": {
-    "sass": "^1.32.8"
+    "sass": "^1.32.12"
   }
 }
