@@ -11,6 +11,6 @@
     "compile:css": "sass --no-source-map source/main.scss build/main.css"
   },
   "devDependencies": {
-    "sass": "^1.32.8"
+    "sass": "^1.32.12"
   }
 }
