@@ -12,6 +12,6 @@
       @content;
     }
   } @else {
-    @error "Invalid breakpoint name. Check spelling or review breakpoints established via viewport settings.";
+    @error "Invalid breakpoint name. Check spelling or review breakpoints viewport settings.";
   }
 }
