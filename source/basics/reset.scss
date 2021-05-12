@@ -173,7 +173,6 @@ video {
 img,
 video {
   max-width: 100%;
-  height: auto;
 }
 
 // Button, input, select, and textarea
@@ -203,13 +202,15 @@ button,
 }
 
 ::-webkit-file-upload-button {
-  font: inherit;
   -webkit-appearance: button;
 }
 
 [type="search"] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
+
+  &:focus {
+    outline-offset: -2px;
+  }
 
   &::-webkit-search-decoration {
     -webkit-appearance: none;

@@ -139,7 +139,6 @@ video {
 img,
 video {
   max-width: 100%;
-  height: auto;
 }
 
 button,
@@ -171,13 +170,14 @@ button::-moz-focus-inner,
 }
 
 ::-webkit-file-upload-button {
-  font: inherit;
   -webkit-appearance: button;
 }
 
 [type=search] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
+}
+[type=search]:focus {
+  outline-offset: -2px;
 }
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
