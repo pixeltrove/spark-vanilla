@@ -1,10 +1,10 @@
 {
-  "name": "spark-vanilla",
+  "name": "sparkle-vanilla",
   "version": "2.0.1",
   "description": "A minimal starting point for developing effective web-based interfaces.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixeltrove/spark-vanilla.git"
+    "url": "https://github.com/pixeltrove/sparkle-vanilla.git"
   },
   "license": "MIT",
   "scripts": {
